@@ -1,0 +1,11 @@
+# Archivos generados por Node.js
+node_modules/
+
+# Archivo generado por npm
+package-lock.json
+
+# Carpeta donde Jest guarda los resultados de las pruebas
+coverage/
+
+# Archivo de configuración de Jest
+jest.config.js

@@ -1,25 +1,21 @@
-const suma = (a, b) => a + b;
+const { sumar, restar, multiplicar, dividir } = require('../src/calculator');
 
-test('suma 1 + 2 es igual a 3', () => {
-  expect(suma(1, 2)).toBe(3);
+test('sumar 1 + 2 es igual a 3', () => {
+  expect(sumar(1, 2)).toBe(3);
 });
 
-function test(description, callback) {
-  try {
-    callback();
-    console.log(`✅ ${description}`);
-  } catch (error) {
-    console.error(`❌ ${description}`);
-    console.error(error);
-  }
-}
+test('restar 3 - 1 es igual a 2', () => {
+  expect(restar(3, 1)).toBe(2);
+});
 
-function expect(result) {
-  return {
-    toBe(expected) {
-      if (result !== expected) {
-        throw new Error(`${result} no es igual a ${expected}`);
-      }
-    }
-  };
-}
+test('multiplicar 2 * 4 es igual a 8', () => {
+  expect(multiplicar(2, 4)).toBe(8);
+});
+
+test('dividir 8 / 2 es igual a 4', () => {
+  expect(dividir(8, 2)).toBe(4);
+});
+
+test('dividir por cero lanza un error', () => {
+  expect(() => dividir(8, 0)).toThrow("No se puede dividir por cero");
+});

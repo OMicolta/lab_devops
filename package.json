@@ -2,8 +2,10 @@
     "name": "calculadora",
     "version": "1.0.0",
     "scripts": {
-      "test": "echo \"Ejecutando pruebas...\"",
-      "build": "echo \"Construyendo el proyecto...\""
+        "test": "jest",
+        "build": "echo \"Construyendo el proyecto...\""
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
     }
-  }
-  
+}
