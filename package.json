@@ -1,0 +1,9 @@
+{
+    "name": "calculadora",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "echo \"Ejecutando pruebas...\"",
+      "build": "echo \"Construyendo el proyecto...\""
+    }
+  }
+  
